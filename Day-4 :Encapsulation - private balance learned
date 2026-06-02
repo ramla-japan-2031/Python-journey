@@ -1,0 +1,20 @@
+class BankAccount:
+    def __init__(self, name):
+        self.owner = name           
+
+        self.__balance = 0        
+    
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+            print(f"{amount} deposit cheythu. New balance: {self.__balance}")
+        else:
+            print("Chori amount")
+    
+    def get_balance(self):
+        return f"{self.owner} nte balance: {self.__balance}"
+
+ramla_account = BankAccount("Ramla")
+ramla_account.deposit(50000)  
+print(ramla_account.get_balance())
+print(ramla_account.__balance)  
