@@ -1,11 +1,11 @@
 
 
-print("=== PART 1: break - Loop Nirthunna Button ===")
+print("=== PART 1: break - loop stoping button===")
 
 pin = "2026"
 
 for attempt in range(1, 4):
-    user_pin = input(f"Attempt {attempt}: PIN enter cheyyu: ")
+    user_pin = input(f"Attempt {attempt}: Enter PIN: ")
     if user_pin == pin:
         print("Access Granted! Welcome Ramla")
         break  
@@ -17,7 +17,7 @@ else:
 
 print("---")
 
-print("\n=== PART 2: continue - Ee Round Skip Cheyyum ===")
+print("\n=== PART 2: continue - Skip this round ===")
 
 laptops = ["i3", "i5 8th Gen", "Pentium", "i5 8th Gen", "Celeron"]
 
